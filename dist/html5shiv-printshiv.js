@@ -1,10 +1,12 @@
 /**
-* @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+* @preserve HTML5 Shiv 3.7.4 (PrintShiv) | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+* Fork ReCoNet/Baseplate: agrega el elemento <search> (HTML Living Standard) a la lista de shiv.
+* Basado en html5shiv-printshiv 3.7.3 original.
 */
 ;(function(window, document) {
 /*jshint evil:true */
   /** version */
-  var version = '3.7.3';
+  var version = '3.7.4';
 
   /** Preset options */
   var options = window.html5 || {};
@@ -231,7 +233,7 @@
     if (html5.shivCSS && !supportsHtml5Styles && !data.hasCSS) {
       data.hasCSS = !!addStyleSheet(ownerDocument,
         // corrects block display not defined in IE6/7/8/9
-        'article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}' +
+        'article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,search,section{display:block}' +
         // adds styling not present in IE6/7/8/9
         'mark{background:#FF0;color:#000}' +
         // hides non-rendered elements
@@ -262,7 +264,7 @@
      * @memberOf html5
      * @type Array|String
      */
-    'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video',
+    'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress search section summary template time video',
 
     /**
      * current version of html5shiv

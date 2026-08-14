@@ -1,12 +1,12 @@
 /**
-* @preserve HTML5 Shiv 3.7.4 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
-* Fork ReCoNet/Baseplate: agrega el elemento <search> (HTML Living Standard) a la lista de shiv.
-* Basado en html5shiv 3.7.3 original.
+* @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+* Custom build for LegaCSS (Reconected Communications Network) by SXNTYXP7271:
+* added `search`, `source`, `track` and `wbr` to the default shived elements list.
 */
 ;(function(window, document) {
 /*jshint evil:true */
   /** version */
-  var version = '3.7.4';
+  var version = '3.7.3';
 
   /** Preset options */
   var options = window.html5 || {};
@@ -264,7 +264,7 @@
      * @memberOf html5
      * @type Array|String
      */
-    'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress search section summary template time video',
+    'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress search section source summary template time track video wbr',
 
     /**
      * current version of html5shiv
